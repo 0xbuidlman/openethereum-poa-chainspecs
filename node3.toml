@@ -1,0 +1,19 @@
+[parity]
+chain = "/home/openethereum/chainspec.json"
+base_path = "/tmp/parity1"
+[network]
+port = 30300
+bootnodes = ["enode://9c5c3b216a5a77c97cb6315a907e2939a5a822e9c8a92a34577805bd0993cf6c8020cf2084aafbf04e81fb5be412191e6c9f4733d1e4868d8ac86e4ec2535252@158.247.213.89:30301", "enode://c22c7016fd976c7bb2ba39820682151a5e7a3dd96ac70c9dabd01284da71e43ae7b211d026b0f98f16b32bfec91e4ac82ce02f90a3de7d41f21a34cc20ec7796@158.247.223.102:30300"]
+[rpc]
+port = 8541
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "parity_accounts"]
+[websockets]
+port = 8451
+[ipc]
+disable = true
+[account]
+password = ["node.pwds"]
+[mining]
+engine_signer = "0x00f4f476157b94567da94ea57c4fc66a6f0e436d"
+reseal_on_txs = "none"
+force_sealing = true

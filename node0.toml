@@ -1,0 +1,16 @@
+[parity]
+chain = "chainspec.json"
+base_path = "/tmp/parity0"
+[network]
+port = 30300
+bootnodes = ["enode://9c5c3b216a5a77c97cb6315a907e2939a5a822e9c8a92a34577805bd0993cf6c8020cf2084aafbf04e81fb5be412191e6c9f4733d1e4868d8ac86e4ec2535252@158.247.213.89:30301"]
+[rpc]
+port = 8541
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "parity_accounts"]
+[websockets]
+port = 8451
+[account]
+password = ["node.pwds"]
+[mining]
+reseal_on_txs = "none"
+force_sealing = true

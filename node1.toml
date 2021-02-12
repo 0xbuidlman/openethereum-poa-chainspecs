@@ -1,0 +1,18 @@
+[parity]
+chain = "chainspec.json"
+base_path = "/tmp/parity1"
+[network]
+port = 30301
+[rpc]
+port = 8541
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "parity_accounts"]
+[websockets]
+port = 8451
+[ipc]
+disable = true
+[account]
+password = ["node.pwds"]
+[mining]
+engine_signer = "0x00af15ca324d3de3f656c4ca669f59f7ae0e3bd1"
+reseal_on_txs = "none"
+force_sealing = true
